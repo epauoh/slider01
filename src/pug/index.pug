@@ -1,0 +1,49 @@
+extends /_layout.pug
+
+block pageVariable
+
+block meta
+  title
+  meta(name="description" content="")
+
+block style
+  link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.3.8/css/swiper.min.css")
+
+block script
+  script(src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.3.8/js/swiper.min.js")
+
+block content
+  div.p-slider01
+    div#js-slider01.p-slider01__slider.swiper-container
+      div.p-slider01__sliderWrapper.swiper-wrapper
+        div.p-slider01__sliderSlide.swiper-slide
+          div.p-slider01__sliderImage(style='background:gray;')
+          div.p-slider01__sliderDetail
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        div.p-slider01__sliderSlide.swiper-slide
+          div.p-slider01__sliderImage(style='background:blue;')
+          div.p-slider01__sliderDetail
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        div.p-slider01__sliderSlide.swiper-slide
+          div.p-slider01__sliderImage(style='background:red;')
+          div.p-slider01__sliderDetail
+            p Lorem ipsum do, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        div.p-slider01__sliderSlide.swiper-slide
+          div.p-slider01__sliderImage(style='background:yellow;')
+          div.p-slider01__sliderDetail
+            p Lorem ipsum dolor sit amet, consectetur adipisicing e aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        div.p-slider01__sliderSlide.swiper-slide
+          div.p-slider01__sliderImage(style='background:green;')
+          div.p-slider01__sliderDetail
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      button.p-slider01__sliderArrow.swiper-button-prev(type="button")
+      button.p-slider01__sliderArrow.swiper-button-next(type="button")
+    div.p-slider01__thumbnail
+      div.p-slider01__thumbnailInner
+        div#js-slider01Thumbnail.p-slider01__thumbnailSlider.swiper-container
+          div.p-slider01__thumbnailWrapper.swiper-wrapper
+            div.p-slider01__thumbnailSlide.swiper-slide(style='background:gray;')
+            div.p-slider01__thumbnailSlide.swiper-slide(style='background:blue;')
+            div.p-slider01__thumbnailSlide.swiper-slide(style='background:red;')
+            div.p-slider01__thumbnailSlide.swiper-slide(style='background:yellow;')
+            div.p-slider01__thumbnailSlide.swiper-slide(style='background:green;')

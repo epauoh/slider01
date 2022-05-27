@@ -1,0 +1,60 @@
+@use '../../setting/variables' as *
+
+.p-slider01
+  position: fixed
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  width: 100%
+
+  &__slider
+    overflow: visible
+
+  &__sliderWrapper
+    box-sizing: border-box
+
+  &__sliderSlide
+    height: auto
+    padding-bottom: 15rem
+    background: #000
+    color: #fff
+
+  &__sliderImage
+    position: absolute
+    bottom: 0
+    left: 0
+    width: calc(50% - 3rem)
+    height: 30rem
+
+  &__sliderDetail
+    width: calc(50% - 3rem)
+    margin-left: auto
+
+  &__sliderArrow
+    top: auto
+    bottom: 0
+    margin-top: auto
+
+    &.swiper-button-prev
+      left: calc(50% - 3rem)
+      transform: translateX(-200%)
+
+    &.swiper-button-next
+      right: auto
+      left: calc(50% - 3rem)
+      transform: translateX(-100%)
+
+  &__thumbnail
+    position: absolute
+    right: 0
+    bottom: 0
+    z-index: 1
+    width: calc(50% - 3rem)
+    overflow: hidden
+
+  &__thumbnailInner
+    transform: translateX(calc(100% / 7.5 * 4.25 * -1))
+    width: calc(100% / 7.5 * 17.5)
+
+  &__thumbnailSlide
+    height: 12rem

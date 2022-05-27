@@ -1,0 +1,1 @@
+!function(){"use strict";!function(){const e=new Swiper("#js-slider01",{loop:!0,loopedSlides:7.5,effect:"fade",navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"}}),o=new Swiper("#js-slider01Thumbnail",{loop:!0,slidesPerView:7.5,centeredSlides:!0});e.controller.control=o,o.controller.control=e}()}();
